@@ -30,3 +30,28 @@ let myFun = function(){
     console.log("I am a function")
 }
 console.log( typeof (names, obj1, bigNo));
+
+
+// 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢->
+
+// Stack(Primitive data types(call by value ) and Heap memory (Non-Primitive (reference)
+
+//Stack(Primitive data types(call by value )
+let myYtName = "NipunGamingYT"
+let newYtName = myYtName
+newYtName = "CodingwithNipun"
+console.log(myYtName)//NipunGamingYT
+console.log(newYtName)//CodingwithNipun
+
+
+// Heap memory (Non-Primitive (reference)
+
+let user1 = {id:"one@gmail.com",
+pass:123}
+let user2 = user1
+
+user2.id = "two@gmail.com"
+console.log(user1.id)//two@gmail.com
+user2.pass = 456
+console.log(user1.pass)//456
+
