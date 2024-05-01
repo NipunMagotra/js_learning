@@ -24,3 +24,4 @@ console.log("slice",myArray.slice(1,5));
 console.log("after slice",myArray);
 console.log("splice",myArray.splice(1,5));
 console.log("after splice",myArray);
+
