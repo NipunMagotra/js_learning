@@ -1,44 +1,42 @@
-function names(){ console.log("Nipun");
-console.log("Magotra");}
+function nameDivision (){
+    console.log("N");
+    console.log("I");
+    console.log("P");
+    console.log("U");
+    console.log("N");
+}
+// nameDivision ()
 
-names() //calling
-names //reference
+function addTwoNo (a, b){
+return a+b;
+}
+// console.log(addTwoNo(2,3));   
 
- function addTwoNumbers(number1 , number2){
-    return number1+number2
- }
+function userStatus(username = "joe"){
+    
+    return `${username} is logged in`
+}
+// console.log(userStatus("Nipun")); 
 
- console.log(addTwoNumbers(2, 9))
-
- function userLoggedIn(username = "Johndoe"){ // johndoe is deafult
-    if(!username){
-        console.log("pls enter username");
-    }
-    return`${username} just login hua`
- }
- console.log(userLoggedIn("Nipun"));  
-
-
+//Shopping cart function
 function calculateCart(...num1){
-   return num1
-}
-console.log(calculateCart(212,4,33,4)); 
-
-// handle objects in functions
-const user ={
-   username : "Nipun",
-   age : 99,
-   price : 10
-}
-function objectUsingFunction(anyobject){
-   console.log(`name is ${anyobject.username} and age is ${anyobject.age}`);
+    return num1;
 
 }
-objectUsingFunction(user)
+console.log(calculateCart(23,44,34))
 
-// handle array in functions 
-const newArray  = [200, 22,444,55,6,77,89]
-function returnSecondValue(randomarray){
-   return randomarray[1]
+// Object in function
+const randomObject ={ name:"Nipun",
+    bill:234
 }
-console.log(returnSecondValue(newArray))
+function totalBill (object){
+    return (`name is ${object.name} and the total bill is ₹${object.bill}`);
+}
+// console.log(totalBill(randomObject));
+
+//Array in function
+const newArray =[12,2,23,44,44,4,53]
+function returnThirdValue(givenArray){
+    return givenArray[2]
+}
+console.log(returnThirdValue(newArray));
